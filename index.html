@@ -4,6 +4,10 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>QR COde Generator</title>
+        <link
+            href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+            rel="stylesheet"
+        />
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
             integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
@@ -29,12 +33,21 @@
                 <div class="options">
                     <div class="option-group">
                         <label for="size">Size:</label>
-                        <select id="select">
+                        <select id="size">
                             <option value="200">200</option>
                             <option value="300">300</option>
                             <option value="400">400</option>
                         </select>
                     </div>
+                </div>
+                <button class="generate-btn" id="generateBtn">
+                    Generate QR Code
+                </button>
+                <div class="qr-section" id="qrSection">
+                    <div class="qr-container" id="qrContainer"></div>
+                    <button class="download-btn" id="downloadBtn">
+                        Download QR Code
+                    </button>
                 </div>
             </div>
         </div>
