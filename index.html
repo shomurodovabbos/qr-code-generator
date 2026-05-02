@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>QR COde Generator</title>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+            integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="card">
+                <h1>QR Code Generator</h1>
+                <p class="subtitle">Enter text or URL to generate QR Code</p>
+                <div class="input-section">
+                    <textarea
+                        id="inputText"
+                        placeholder="Enter text or URL here..."
+                        rows="4"
+                    >
+                    </textarea>
+                </div>
+                <div class="options">
+                    <div class="option-group">
+                        <label for="size">Size:</label>
+                        <select id="select">
+                            <option value="200">200</option>
+                            <option value="300">300</option>
+                            <option value="400">400</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
