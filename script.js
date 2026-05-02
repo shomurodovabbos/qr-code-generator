@@ -46,3 +46,20 @@ generateBtn.addEventListener("click", () => {
         }
     }, 100);
 });
+
+downloadBtn.addEventListener("click", () => {
+    if (!qrCodeDataUrl) {
+        return;
+    }
+    const link = document.createElement("a");
+    link.download = "qrcode.png";
+    link.href = qrCodeDataUrl;
+    link.click();
+});
+
+inputText.addEventListener("keydown", (e) => {
+    if (e.ctrlKey || (e.metaKey && e.key === "Enter")) {
+        generateBtn.click();
+    }
+});
+inputText.value = "";
